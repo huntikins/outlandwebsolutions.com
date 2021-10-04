@@ -1,0 +1,36 @@
+.hero {
+    background: linear-gradient(rgba(255, 255, 255, .4), rgba(255, 255, 255, 1) 80%), url('../images/glenn-carstens-peters-203007-unsplash.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heroText {
+    padding: 1rem;
+    text-align: right;
+}
+
+.heroText h1{
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+.heroText p {
+   font-size: 1.25rem;
+}
+
+.heroText button {
+    background-color: blue;
+    padding: 1rem 3rem;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 1.25rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
