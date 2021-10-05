@@ -4,7 +4,7 @@ export default function ContactForm() {
 	return (
 		<form className={styles.form}>
 			<div className={styles.formGroup}>
-				<h1>Let's find your web solution together</h1>
+				<h1>Let&apos;s find your web solution together</h1>
 				<label id="email-label" htmlFor="email-input" data-required="true">
 					Email<span>*</span>
 				</label>
