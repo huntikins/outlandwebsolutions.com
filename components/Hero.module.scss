@@ -1,48 +1,16 @@
-@import '../styles/variables';
-
 .hero {
-    background: linear-gradient(45deg, $primary, $secondary);
-    background-position: center;
-    background-size: cover;
-    padding: 3rem 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    .ows-logo {
-        margin: 0 auto;
+    position: relative;
+    height: 90vh;
+    &_content {
+        position: absolute;
+        height: 100%;
         width: 100%;
-        height: auto;
-        display: block;
-        padding: 1rem;
-    }
-    &Text {
-        padding: 1rem;
-        color: $white;
-        text-align: center;
-        h1 {
-            font-size: 3rem;
-            font-style: italic;
-            line-height: 1;
-            margin: 0;
-            padding-bottom:1rem;
-        }
-        p {
-            font-size: 1.25rem;
-            text-align: justify;
-        }
-    }
-}
-
-.socialIcons {
-    display: flex;
-    justify-content: space-around;
-    width: 50%;
-    margin: 0 auto;
-    padding-top: 2rem;
-    a {
-        svg {
-            height: 2rem;
-            fill: $white;
-        }
+        z-index: 7;
+        top: 0;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center; 
+        padding-top: 4rem;
     }
 }
