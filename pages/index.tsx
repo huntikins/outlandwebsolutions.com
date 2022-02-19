@@ -6,6 +6,7 @@ import logo from '../public/assets/logo-full-white.png'
 import bkg from '../public/assets/OWS-hero.jpg'
 import NewsSection from '../components/home/News'
 import ServicesSection from '../components/home/Services'
+import { ContactSection } from '../components/home/Contact'
 
 const Home: NextPage = () => {
   return (
@@ -46,6 +47,7 @@ const Home: NextPage = () => {
       </Hero>
       <NewsSection />
       <ServicesSection />
+      <ContactSection />
     </main>
   )
 }

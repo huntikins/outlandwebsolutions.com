@@ -6,7 +6,7 @@ import Document, { Html, Head, Main, NextScript } from 'next/document'
 class MyDocument extends Document {
   render() {
     return (
-        <Html>
+      <Html>
         <Head>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -18,6 +18,15 @@ class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
+          {/* Start of HubSpot Embed Code */}
+          <script
+            type="text/javascript"
+            id="hs-script-loader"
+            async
+            defer
+            src="//js-na1.hs-scripts.com/20809680.js"
+          ></script>
+          {/* End of HubSpot Embed Code */}
         </body>
       </Html>
     )
