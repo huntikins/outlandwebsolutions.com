@@ -10,7 +10,7 @@ function Hero(props: { bkg: { src: string }; label: string; children: any}) {
     <section
       role="contentinfo"
       aria-label={props.label}
-      className="h-screen"
+      className="h-screen p-8"
       style={sectionStye}
     >
       <div className="flex items-center justify-center h-screen">

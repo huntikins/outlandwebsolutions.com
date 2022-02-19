@@ -2,7 +2,7 @@ import { serialize } from 'next-mdx-remote/serialize'
 import { GetStaticProps, GetStaticPaths } from 'next'
 import { MDXRemote, MDXRemoteSerializeResult } from 'next-mdx-remote'
 
-import Thumbnail from '../../components/Thumbnail'
+import Thumbnail from '../../components/news/Thumbnail'
 import { IPost } from '../../types/post'
 import { getPost, getAllPosts } from '../../utils/mdxUtils'
 import { ParsedUrlQuery } from 'querystring'

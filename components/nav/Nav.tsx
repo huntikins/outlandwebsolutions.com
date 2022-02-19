@@ -23,7 +23,7 @@ export default function Nav() {
             <a
               className={`${
                 router.pathname == '/' ? 'text-white' : 'text-purple-200'
-              } font-brand text-xl uppercase tracking-tight text-purple-200`}
+              } font-brand text-lg lg:text-xl uppercase tracking-tight text-purple-200`}
             >
               Outland Web Solutions
             </a>

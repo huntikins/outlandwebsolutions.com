@@ -5,6 +5,7 @@ import Image from 'next/image'
 import logo from '../public/assets/logo-full-white.png'
 import bkg from '../public/assets/OWS-hero.jpg'
 import NewsSection from '../components/home/News'
+import ServicesSection from '../components/home/Services'
 
 const Home: NextPage = () => {
   return (
@@ -19,14 +20,15 @@ const Home: NextPage = () => {
           aria-hidden="true"
           placeholder="blur"
           quality="100"
+          className='block w-full mx-auto'
         />
-        <a href="#news">
+        <a href="#news" className='block w-full flex justify-center items-center'>
           <svg
             width="50"
             height="50"
             viewBox="0 0 24 24"
             fill="none"
-            className="absolute inset-x-1/2 bottom-0 h-14 animate-bounce text-purple-200"
+            className="mt-24 h-12 lg:h-14 animate-bounce text-purple-200"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -43,6 +45,7 @@ const Home: NextPage = () => {
         </a>
       </Hero>
       <NewsSection />
+      <ServicesSection />
     </main>
   )
 }
