@@ -18,10 +18,10 @@ const Home: NextPage = () => {
           <span className="block text-3xl lg:text-5xl">Web Solutions</span>
         </h1>
         <a
-          aria-hidden="true"
           href="#news"
           className="block flex w-full animate-fadeIn items-center justify-center "
         >
+          <span className="sr-only">Scroll to next section</span>
           <svg
             width="50"
             height="50"
