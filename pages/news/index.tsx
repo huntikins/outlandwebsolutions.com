@@ -22,12 +22,12 @@ const News: NextPage<Props> = ({ posts }: Props) => {
           </h1>
         </Hero>
 
-        <div className="flex flex-col flex-wrap bg-purple-200 p-8 lg:flex-row">
+        <div className="flex flex-col flex-wrap bg-purple-200 lg:flex-row">
           {posts.length ? (
             posts.map((post) => (
               <article
                 key={post.slug}
-                className="m-8 w-full bg-stone-900 text-purple-200 lg:w-1/3"
+                className="m-8 bg-stone-900 text-purple-200 lg:w-1/3"
               >
                 <div className="mb-4">
                   <Thumbnail
