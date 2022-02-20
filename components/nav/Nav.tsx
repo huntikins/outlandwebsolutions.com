@@ -1,4 +1,7 @@
 import Link from 'next/link'
+import Image from 'next/image'
+import logo from '../../public/assets/logo-text-color.png'
+
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
@@ -23,9 +26,9 @@ export default function Nav() {
             <a
               className={`${
                 router.pathname == '/' ? 'text-white' : 'text-purple-200'
-              } font-brand text-lg lg:text-xl uppercase tracking-tight text-purple-200`}
+              } font-brand text-lg uppercase tracking-tight text-purple-200 lg:text-xl`}
             >
-              Outland Web Solutions
+              Outland
             </a>
           </Link>
         </div>

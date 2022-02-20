@@ -9,6 +9,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Outland Web Solutions</title>
+        <meta name="description" content="Full Service Web Development, Hosting, Maintenance & SEO" />
       </Head>
       <Nav />
       <Component {...pageProps} />

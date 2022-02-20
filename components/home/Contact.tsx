@@ -79,9 +79,9 @@ export function ContactSection() {
   return (
     <section className="bg-stone-900 p-8 text-purple-200">
       <div className="mx-auto max-w-7xl">
-        <div className="mx-auto flex max-w-7xl flex-col lg:p-8 lg:flex-row">
+        <div className="mx-auto flex max-w-7xl flex-col lg:flex-row lg:p-8">
           <div className="align-center flex flex-1 flex-col justify-center lg:p-8">
-            <h2 className="text-5xl">Say Hello</h2>
+            <h2 className="font-brand text-5xl">Say Hello</h2>
             <p className="py-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               numquam dolorum inventore consequatur doloremque fuga perferendis
@@ -90,12 +90,14 @@ export function ContactSection() {
             </p>
             <Image
               src={graphic}
-              alt="Graphic of link icon with two persons next to it"
+              alt="Graphic of a person sitting next to a laptop"
+              height="152"
+              width="355"
             />
           </div>
           <div className="flex-1 lg:p-8">
-            <div >
-              {submitState && <p className='text-center'>{message}</p>}
+            <div>
+              {submitState && <p className="text-center">{message}</p>}
               {!submitState && (
                 <form action="" method="post" onSubmit={handleSubmit}>
                   <div className="mt-12 items-center md:flex">

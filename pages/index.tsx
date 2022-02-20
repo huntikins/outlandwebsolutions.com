@@ -2,34 +2,31 @@ import type { NextPage } from 'next'
 import Hero from '../components/home/Hero'
 import Image from 'next/image'
 
-import logo from '../public/assets/logo-full-white.png'
-import bkg from '../public/assets/OWS-hero.jpg'
+import bkg from '../public/assets/OWS-Hero.jpg'
 import NewsSection from '../components/home/News'
 import ServicesSection from '../components/home/Services'
 import { ContactSection } from '../components/home/Contact'
+import { useEffect, useRef } from 'react';
 
 const Home: NextPage = () => {
+
   return (
     <main>
       <Hero label="Outland Web Solutions" bkg={bkg}>
-        <h1 className="hidden">Outland Web Solutions</h1>
-        <Image
-          src={logo}
-          width="807"
-          height="344"
-          alt=""
-          aria-hidden="true"
-          placeholder="blur"
-          quality="100"
-          className='block w-full mx-auto'
-        />
-        <a href="#news" className='block w-full flex justify-center items-center'>
+        <h1 className="animate-fadeIn text-center font-brand text-6xl uppercase text-purple-200 lg:text-9xl">
+          Outland
+          <span className="block text-3xl lg:text-5xl">Web Solutions</span>
+        </h1>
+        <a
+          href="#news"
+          className="block flex w-full animate-fadeIn items-center justify-center "
+        >
           <svg
             width="50"
             height="50"
             viewBox="0 0 24 24"
             fill="none"
-            className="mt-24 h-12 lg:h-14 animate-bounce text-purple-200"
+            className="mt-24 h-12 animate-bounce text-purple-200 lg:h-14"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
