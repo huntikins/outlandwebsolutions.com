@@ -22,14 +22,14 @@ export function ContactSection() {
     return ''
   }
 
-  const fNameRef = useRef(null)
-  const lNameRef = useRef(null)
-  const emailRef = useRef(null)
-  const messageRef = useRef(null)
+  const fNameRef = useRef<HTMLInputElement>(null)
+  const lNameRef = useRef<HTMLInputElement>(null)
+  const emailRef = useRef<HTMLInputElement>(null)
+  const messageRef = useRef<HTMLTextAreaElement>(null)
   let message = 'Thank you for your message, we will contact you as soon as possible'
   const [submitState, setSubmitState] = useState(false)
 
-  const handleSubmit = async (e: Event) => {
+  const handleSubmit = async (e: any) => {
     e.preventDefault()
     try {
       const response = await fetch(
@@ -43,19 +43,19 @@ export function ContactSection() {
             fields: [
               {
                 name: 'firstname',
-                value: fNameRef.current.value,
+                value: fNameRef.current ? fNameRef.current.value : '',
               },
               {
                 name: 'lastname',
-                value: lNameRef.current.value,
+                value: lNameRef.current ? lNameRef.current.value : '',
               },
               {
                 name: 'email',
-                value: emailRef.current.value,
+                value: emailRef.current ? emailRef.current.value : '',
               },
               {
                 name: 'message',
-                value: messageRef.current.value,
+                value: messageRef.current ? messageRef.current.value : '',
               },
             ],
             context: {
