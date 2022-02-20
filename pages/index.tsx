@@ -6,10 +6,8 @@ import bkg from '../public/assets/OWS-hero.jpg'
 import NewsSection from '../components/page/News'
 import ServicesSection from '../components/page/Services'
 import { ContactSection } from '../components/page/Contact'
-import { useEffect, useRef } from 'react';
 
 const Home: NextPage = () => {
-
   return (
     <main>
       <Hero label="Outland Web Solutions" bkg={bkg}>
@@ -19,7 +17,7 @@ const Home: NextPage = () => {
         </h1>
         <a
           href="#news"
-          className="block flex w-full animate-fadeIn items-center justify-center "
+          className="flex w-full animate-fadeIn items-center justify-center "
         >
           <span className="sr-only">Scroll to next section</span>
           <svg
@@ -45,7 +43,7 @@ const Home: NextPage = () => {
       </Hero>
       <NewsSection />
       <ServicesSection />
-      <ContactSection pageName='Home'/>
+      <ContactSection pageName="Home" />
     </main>
   )
 }

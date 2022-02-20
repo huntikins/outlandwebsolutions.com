@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "postbuild": "next-sitemap"
   },
   "dependencies": {
     "gray-matter": "^4.0.3",
@@ -22,6 +23,7 @@
     "autoprefixer": "^10.4.2",
     "eslint": "8.9.0",
     "eslint-config-next": "12.1.0",
+    "next-sitemap": "^2.4.3",
     "postcss": "^8.4.6",
     "prettier": "^2.5.1",
     "prettier-plugin-tailwindcss": "^0.1.7",
