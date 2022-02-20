@@ -54,7 +54,9 @@ const News: NextPage<Props> = ({ posts }: Props) => {
               </article>
             ))
           ) : (
-            <p className="w-full text-center">No Posts Yet</p>
+            <div className="p-8 text-center w-full">
+              <p>New Posts Coming Soon</p>
+            </div>
           )}
         </div>
       </main>

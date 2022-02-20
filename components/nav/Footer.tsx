@@ -43,7 +43,7 @@ export default function Footer() {
           <div className="px-6 py-8 text-purple-200 lg:flex lg:w-auto lg:items-center">
             <ul className="text-md m-0 block flex list-none p-0 font-brand uppercase">
               <li>
-                <Link href="https://twitter.com/outlandwebsolutions">
+                <Link href="https://twitter.com/weboutland">
                   <a className="mt-4 mr-4 block hover:text-white lg:mt-0 lg:inline-block">
                     <svg
                       role="img"
