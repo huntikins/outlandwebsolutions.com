@@ -13,7 +13,7 @@ function Hero(props: { bkg: { src: string }; label: string; children: any}) {
       className="px-8"
       style={sectionStye}
     >
-      <div className="flex items-center justify-center py-60">
+      <div className="flex items-center justify-center py-40 lg:py-60">
         <div>{props.children}</div>
       </div>
     </section>

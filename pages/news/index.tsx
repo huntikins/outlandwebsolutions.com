@@ -17,9 +17,11 @@ const News: NextPage<Props> = ({ posts }: Props) => {
     return (
       <main>
         <Hero label="Outland Web Solutions" bkg={bkg}>
-          <h1 className="animate-fadeIn rounded-lg bg-stone-900 p-8 text-center font-brand text-6xl uppercase text-purple-200 lg:text-9xl">
-            News
-          </h1>
+          <div className="bg-stone-900 bg-opacity-80">
+            <h1 className="animate-fadeIn rounded-lg p-8 text-center font-brand text-6xl uppercase text-purple-200 lg:text-9xl">
+              News
+            </h1>
+          </div>
         </Hero>
 
         <div className="flex flex-col flex-wrap bg-purple-200 lg:flex-row">

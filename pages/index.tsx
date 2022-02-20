@@ -11,10 +11,12 @@ const Home: NextPage = () => {
   return (
     <main>
       <Hero label="Outland Web Solutions" bkg={bkg}>
-        <h1 className="animate-fadeIn rounded-lg bg-stone-900 p-8 text-center font-brand text-6xl uppercase text-purple-200 lg:text-9xl">
-          Outland
-          <span className="block text-3xl lg:text-5xl">Web Solutions</span>
-        </h1>
+        <div className='bg-stone-900 bg-opacity-80'>
+          <h1 className="animate-fadeIn rounded-lg p-8 text-center font-brand text-5xl uppercase text-purple-200 lg:text-9xl">
+            Outland
+            <span className="block text-2xl lg:text-5xl">Web Solutions</span>
+          </h1>
+        </div>
       </Hero>
       <NewsSection />
       <ServicesSection />
