@@ -12,7 +12,7 @@ const Services: NextPage = () => {
     return (
       <main>
         <Hero label="Outland Web Solutions" bkg={bkg}>
-          <h1 className="animate-fadeIn bg-stone-900 p-8 text-center font-brand text-5xl uppercase text-purple-200 lg:text-9xl">
+          <h1 className="animate-fadeIn rounded-lg bg-stone-900 p-8 text-center font-brand text-5xl uppercase text-purple-200 lg:text-9xl">
             Services
           </h1>
         </Hero>

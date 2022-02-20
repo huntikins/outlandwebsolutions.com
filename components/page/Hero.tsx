@@ -4,16 +4,16 @@ function Hero(props: { bkg: { src: string }; label: string; children: any}) {
   const sectionStye = {
     backgroundImage: `url(${props.bkg.src})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'bottom',
+    backgroundPosition: 'center',
   }
   return (
     <section
       role="contentinfo"
       aria-label={props.label}
-      className="h-screen px-8"
+      className="px-8"
       style={sectionStye}
     >
-      <div className="flex items-center justify-center h-screen">
+      <div className="flex items-center justify-center py-60">
         <div>{props.children}</div>
       </div>
     </section>
