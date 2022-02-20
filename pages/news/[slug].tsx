@@ -24,7 +24,7 @@ const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
         <div className="mx-auto w-2/3 py-8">
           <Thumbnail title={frontMatter.title} src={frontMatter.thumbnail} />
         </div>
-        <div className="p-8 max-w-7xl mx-auto text-lg">
+        <div className="p-8 max-w-7xl mx-auto text-2xl">
           <MDXRemote {...source} />
         </div>
       </article>
