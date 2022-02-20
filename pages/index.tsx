@@ -2,7 +2,7 @@ import type { NextPage } from 'next'
 import Hero from '../components/home/Hero'
 import Image from 'next/image'
 
-import bkg from '../public/assets/OWS-Hero.jpg'
+import bkg from '../public/assets/OWS-hero.jpg'
 import NewsSection from '../components/home/News'
 import ServicesSection from '../components/home/Services'
 import { ContactSection } from '../components/home/Contact'
