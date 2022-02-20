@@ -30,7 +30,7 @@ function MyApp({ Component, pageProps }: AppProps) {
   const seo = {
     title: 'Outland Web Solutions',
     description: 'Full Service Web Development, Hosting, Maintenance & SEO',
-    thumbnail: '',
+    thumbnail: 'https://outlandwebsolutions.com/assets/ows.png',
     base_url: 'https://outlandwebsolutions.com',
     twitter: '@outlandwebsolutions'
   }
