@@ -2,7 +2,7 @@ import graphic from '../../public/assets/contact.svg'
 import Image from 'next/image'
 import { useRef, useState } from 'react'
 
-export function ContactSection() {
+export function ContactSection({pageName}:{pageName: string}) {
   const portalId = '20809680'
   const formId = '764a9dda-8540-4819-9256-687ed30d62a5'
 
@@ -61,7 +61,7 @@ export function ContactSection() {
             context: {
               hutk: getCookie('hubspotutk'),
               pageUri: 'https://outlandwebsolutions.com',
-              pageName: 'Home',
+              pageName: pageName,
             },
           }),
         }

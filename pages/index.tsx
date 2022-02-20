@@ -44,7 +44,7 @@ const Home: NextPage = () => {
       </Hero>
       <NewsSection />
       <ServicesSection />
-      <ContactSection />
+      <ContactSection pageName='Home'/>
     </main>
   )
 }

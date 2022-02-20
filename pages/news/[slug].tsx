@@ -16,19 +16,19 @@ type Props = {
 const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
 
   return (
-    <div className='p-8'>
-      <article className="">
-        <div className="mb-4">
+    <main className='bg-purple-200'>
+      <article className='p-8'>
+        <h1 className="animate-fadeIn p-8 text-center font-brand text-3xl uppercase text-stone-900 lg:text-6xl">
+          {frontMatter.title}
+        </h1>
+        <div className="mx-auto w-2/3 py-8">
           <Thumbnail title={frontMatter.title} src={frontMatter.thumbnail} />
         </div>
-
-        <h1>{frontMatter.title}</h1>
-
-        <p>{frontMatter.description}</p>
-
-        <MDXRemote {...source} />
+        <div className="p-8 max-w-7xl mx-auto text-lg">
+          <MDXRemote {...source} />
+        </div>
       </article>
-    </div>
+    </main>
   )
 }
 
