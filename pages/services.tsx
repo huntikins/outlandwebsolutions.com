@@ -1,5 +1,5 @@
 import { NextPage } from "next/types";
-import Hero from "../components/home/Hero";
+import Hero from "../components/page/Hero";
 import Link from 'next/link'
 import Image from 'next/image'
 import graphic from '../public/assets/developer.svg'

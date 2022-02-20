@@ -1,11 +1,11 @@
 import type { NextPage } from 'next'
-import Hero from '../components/home/Hero'
+import Hero from '../components/page/Hero'
 import Image from 'next/image'
 
 import bkg from '../public/assets/OWS-hero.jpg'
-import NewsSection from '../components/home/News'
-import ServicesSection from '../components/home/Services'
-import { ContactSection } from '../components/home/Contact'
+import NewsSection from '../components/page/News'
+import ServicesSection from '../components/page/Services'
+import { ContactSection } from '../components/page/Contact'
 import { useEffect, useRef } from 'react';
 
 const Home: NextPage = () => {
@@ -18,6 +18,7 @@ const Home: NextPage = () => {
           <span className="block text-3xl lg:text-5xl">Web Solutions</span>
         </h1>
         <a
+          aria-hidden="true"
           href="#news"
           className="block flex w-full animate-fadeIn items-center justify-center "
         >

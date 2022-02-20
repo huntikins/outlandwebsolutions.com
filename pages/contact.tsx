@@ -1,6 +1,6 @@
 import { NextPage } from 'next/types'
-import { ContactSection } from '../components/home/Contact'
-import Hero from '../components/home/Hero'
+import { ContactSection } from '../components/page/Contact'
+import Hero from '../components/page/Hero'
 
 import bkg from '../public/assets/contact.jpg'
 

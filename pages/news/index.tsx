@@ -3,7 +3,7 @@ import type { NextPage, GetStaticProps } from 'next'
 import { IPost } from '../../types/post'
 import Link from 'next/link'
 import { getAllPosts } from '../../utils/mdxUtils'
-import Hero from '../../components/home/Hero';
+import Hero from '../../components/page/Hero';
 
 import bkg from '../../public/assets/news.jpg'
 

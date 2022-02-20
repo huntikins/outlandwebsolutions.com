@@ -102,8 +102,11 @@ export function ContactSection({pageName}:{pageName: string}) {
                 <form action="" method="post" onSubmit={handleSubmit}>
                   <div className="mt-12 items-center md:flex">
                     <div className="flex w-full flex-col md:w-1/2">
-                      <label className="leading-none">First Name</label>
+                      <label htmlFor="firstname" className="leading-none">
+                        First Name
+                      </label>
                       <input
+                        id="firstname"
                         ref={fNameRef}
                         type="text"
                         name="firstname"
@@ -112,8 +115,11 @@ export function ContactSection({pageName}:{pageName: string}) {
                       />
                     </div>
                     <div className="mt-4 flex w-full flex-col md:ml-6 md:mt-0 md:w-1/2">
-                      <label className="leading-none">Last Name</label>
+                      <label htmlFor="lastname" className="leading-none">
+                        Last Name
+                      </label>
                       <input
+                        id="lastname"
                         ref={lNameRef}
                         type="text"
                         name="lastname"
@@ -124,8 +130,11 @@ export function ContactSection({pageName}:{pageName: string}) {
                   </div>
                   <div className="mt-8 items-center md:flex">
                     <div className="flex w-full flex-col">
-                      <label className="leading-none">Email</label>
+                      <label htmlFor="email" className="leading-none">
+                        Email
+                      </label>
                       <input
+                        id="email"
                         ref={emailRef}
                         type="email"
                         name="email"
@@ -136,8 +145,11 @@ export function ContactSection({pageName}:{pageName: string}) {
                   </div>
                   <div>
                     <div className="mt-8 flex w-full flex-col">
-                      <label className="leading-none">Message</label>
+                      <label htmlFor="message" className="leading-none">
+                        Message
+                      </label>
                       <textarea
+                        id="message"
                         ref={messageRef}
                         required
                         name="message"
