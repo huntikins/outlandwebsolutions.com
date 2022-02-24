@@ -95,6 +95,20 @@ export default function Nav() {
                 </a>
               </Link>
             </li>
+            <li>
+              <Link href="/pricing">
+                <a
+                  onClick={() => closeMenu()}
+                  className={`${
+                    router.pathname == '/pricing'
+                      ? 'text-white'
+                      : 'text-purple-200'
+                  } mt-4 mr-4 block hover:text-white lg:mt-0 lg:inline-block`}
+                >
+                  Pricing
+                </a>
+              </Link>
+            </li>
           </ul>
         </div>
       </nav>
