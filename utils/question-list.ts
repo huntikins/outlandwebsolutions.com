@@ -85,7 +85,7 @@ import { Choice, Question } from './questions'
 
   // Question Ten
   const questionTen = new Question(
-    'textarea',
+    'form',
     'Anything you would like to share?',
     0
   )
