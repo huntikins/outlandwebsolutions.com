@@ -13,7 +13,7 @@ const Services: NextPage = () => {
       <main>
         <Hero label="Outland Web Solutions" bkg={bkg}>
           <div className="bg-stone-900 bg-opacity-80">
-            <h1 className="animate-fadeIn rounded-lg p-8 text-center font-brand text-5xl uppercase text-purple-200 lg:text-9xl">
+            <h1 className="animate-fadeIn rounded-lg p-4 lg:p-8 text-center font-brand text-5xl uppercase text-purple-200 lg:text-9xl">
               Services
             </h1>
           </div>
@@ -22,7 +22,7 @@ const Services: NextPage = () => {
           id="development"
           className="bg-purple-200 py-10 text-stone-900"
         >
-          <div className="mx-auto flex max-w-7xl flex-col p-8 lg:flex-row">
+          <div className="mx-auto flex max-w-7xl flex-col p-4 lg:p-8 lg:flex-row">
             <div className="order-last flex-1 py-8 lg:order-first">
               <h2 className="mb-8 font-brand text-4xl lg:text-5xl">
                 Custom Web Development
@@ -50,7 +50,7 @@ const Services: NextPage = () => {
           </div>
         </section>
         <section id="hosting" className="bg-stone-900 py-10 text-purple-200">
-          <div className="mx-auto flex max-w-7xl flex-col p-8 lg:flex-row">
+          <div className="mx-auto flex max-w-7xl flex-col p-4 lg:p-8 lg:flex-row">
             <div className="flex-1 py-8">
               <Image
                 src={hosting}
@@ -78,7 +78,7 @@ const Services: NextPage = () => {
           </div>
         </section>
         <section id="SEO" className="bg-purple-200 py-10 text-stone-900">
-          <div className="mx-auto flex max-w-7xl flex-col p-8 lg:flex-row">
+          <div className="mx-auto flex max-w-7xl flex-col p-4 lg:p-8 lg:flex-row">
             <div className="order-last flex-1 py-8 lg:order-first">
               <h2 className="mb-8 font-brand text-4xl lg:text-5xl">
                 Search Engine Optimization

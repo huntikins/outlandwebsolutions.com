@@ -10,6 +10,7 @@
     "postbuild": "next-sitemap"
   },
   "dependencies": {
+    "@tailwindcss/forms": "^0.4.0",
     "gray-matter": "^4.0.3",
     "gsap": "^3.9.1",
     "next": "12.1.0",

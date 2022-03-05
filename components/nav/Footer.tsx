@@ -6,7 +6,7 @@ export default function Footer() {
     return (
       <footer className="bg-stone-900 ">
         <div className="mx-auto flex w-full max-w-7xl flex-col justify-between lg:flex-row">
-          <nav className="items-center justify-between p-6">
+          <nav className="items-center justify-between p-4 lg:p-8">
             <div className="mr-6 flex flex-shrink-0 items-center text-white">
               <Link href="/">
                 <a className="font-brand text-lg uppercase tracking-tight text-purple-200 lg:text-xl">
@@ -40,7 +40,7 @@ export default function Footer() {
               </ul>
             </div>
           </nav>
-          <div className="px-6 py-8 text-purple-200 lg:flex lg:w-auto lg:items-center">
+          <div className=" px-4 lg:px-6 py-8 text-purple-200 lg:flex lg:w-auto lg:items-center">
             <ul className="text-md m-0 block flex list-none p-0 font-brand uppercase">
               <li>
                 <Link href="https://twitter.com/weboutland">

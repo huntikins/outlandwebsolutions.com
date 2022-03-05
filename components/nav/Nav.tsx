@@ -19,8 +19,8 @@ export default function Nav() {
     setNavbarOpen(false)
   }
   return (
-    <header>
-      <nav className="flex flex-wrap items-center justify-between bg-stone-900 p-6">
+    <header className="bg-stone-900">
+      <nav className="flex max-w-7xl flex-wrap items-center mx-auto justify-between p-4 lg:p-8">
         <div className="mr-6 flex flex-shrink-0 items-center text-white">
           <Link href="/">
             <a
