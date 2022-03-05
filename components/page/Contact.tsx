@@ -77,11 +77,11 @@ export function ContactSection({pageName}:{pageName: string}) {
     }
   }
   return (
-    <section className="bg-stone-900 p-8 text-purple-200">
+    <section className="bg-stone-900 p-4 lg:p-8 text-purple-200">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto flex max-w-7xl flex-col lg:flex-row lg:p-8">
           <div className="align-center flex flex-1 flex-col justify-center lg:p-8">
-            <h2 className="font-brand text-5xl">Say Hello</h2>
+            <h2 className="font-brand text-4xl lg:text-5xl">Say Hello</h2>
             <p className="py-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               numquam dolorum inventore consequatur doloremque fuga perferendis

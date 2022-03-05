@@ -19,8 +19,8 @@ export default function Nav() {
     setNavbarOpen(false)
   }
   return (
-    <header>
-      <nav className="flex flex-wrap items-center justify-between bg-stone-900 p-6">
+    <header className="bg-stone-900">
+      <nav className="flex max-w-7xl flex-wrap items-center mx-auto justify-between p-4 lg:p-8">
         <div className="mr-6 flex flex-shrink-0 items-center text-white">
           <Link href="/">
             <a
@@ -92,20 +92,6 @@ export default function Nav() {
                   } mt-4 mr-4 block hover:text-white lg:mt-0 lg:inline-block`}
                 >
                   Contact
-                </a>
-              </Link>
-            </li>
-            <li>
-              <Link href="/pricing">
-                <a
-                  onClick={() => closeMenu()}
-                  className={`${
-                    router.pathname == '/pricing'
-                      ? 'text-white'
-                      : 'text-purple-200'
-                  } mt-4 mr-4 block hover:text-white lg:mt-0 lg:inline-block`}
-                >
-                  Pricing
                 </a>
               </Link>
             </li>
