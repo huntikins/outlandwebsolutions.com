@@ -5,8 +5,11 @@ import Image from 'next/image'
 
 export default function ServicesSection() {
   return (
-    <section className="bg-stone-900 p-4 lg:p-8 text-purple-200">
-      <div className="flex w-full flex-col justify-center py-8 lg:order-last">
+    <section className="bg-stone-900 p-4 text-purple-200 lg:p-8">
+      <div
+        className="flex w-full flex-col justify-center py-8 lg:order-last"
+        data-aos="fade-in"
+      >
         <h2 className="mb-8 w-full text-center font-brand text-4xl lg:text-5xl">
           Full Service Web Development
         </h2>
@@ -18,7 +21,10 @@ export default function ServicesSection() {
         </p>
       </div>
       <div className="flex flex-col flex-wrap lg:flex-row">
-        <article className="flex w-full flex-col justify-between lg:p-8 lg:w-1/3">
+        <article
+          className="flex w-full flex-col justify-between lg:w-1/3 lg:p-8"
+          data-aos="fade-right"
+        >
           <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
             <Image
               src={developer}
@@ -31,7 +37,10 @@ export default function ServicesSection() {
             Custom Web Development
           </h3>
         </article>
-        <article className="flex w-full flex-col justify-between lg:p-8 lg:w-1/3">
+        <article
+          className="flex w-full flex-col justify-between lg:w-1/3 lg:p-8"
+          data-aos="fade-up"
+        >
           <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
             <Image
               src={hosting}
@@ -44,7 +53,10 @@ export default function ServicesSection() {
             Web Hosting & Maintenance
           </h3>
         </article>
-        <article className="flex w-full flex-col justify-between lg:p-8 lg:w-1/3">
+        <article
+          className="flex w-full flex-col justify-between lg:w-1/3 lg:p-8"
+          data-aos="fade-left"
+        >
           <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
             <Image
               src={seo}

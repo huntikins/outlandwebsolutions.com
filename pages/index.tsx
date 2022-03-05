@@ -12,7 +12,7 @@ const Home: NextPage = () => {
   return (
     <main>
       <div className="bg-purple-200 pt-4">
-        <h1 className="animate-fadeIn rounded-lg p-4 lg:p-8 text-center font-brand text-6xl uppercase text-stone-900 lg:text-9xl">
+        <h1 className="rounded-lg p-4 lg:p-8 text-center font-brand text-6xl uppercase text-stone-900 lg:text-9xl" data-aos="fade-down">
           Outland
           <span className="block text-3xl lg:text-5xl">Web Solutions</span>
         </h1>

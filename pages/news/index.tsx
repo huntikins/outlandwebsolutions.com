@@ -26,10 +26,12 @@ const News: NextPage<Props> = ({ posts }: Props) => {
 
         <div className="flex flex-col flex-wrap bg-purple-200 lg:flex-row">
           {posts.length ? (
-            posts.map((post) => (
+            posts.map((post, index) => (
               <article
                 key={post.slug}
                 className="m-8 bg-stone-900 text-purple-200 lg:w-1/3"
+                data-aos="fade-in"
+                data-aos-delay={index*500}
               >
                 <div className="mb-4">
                   <Thumbnail

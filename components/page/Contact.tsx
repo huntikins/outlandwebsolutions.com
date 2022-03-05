@@ -77,10 +77,13 @@ export function ContactSection({pageName}:{pageName: string}) {
     }
   }
   return (
-    <section className="bg-stone-900 p-4 lg:p-8 text-purple-200">
+    <section className="bg-stone-900 p-4 text-purple-200 lg:p-8">
       <div className="mx-auto max-w-7xl">
         <div className="mx-auto flex max-w-7xl flex-col lg:flex-row lg:p-8">
-          <div className="align-center flex flex-1 flex-col justify-center lg:p-8">
+          <div
+            className="align-center flex flex-1 flex-col justify-center lg:p-8"
+            data-aos="fade-up"
+          >
             <h2 className="font-brand text-4xl lg:text-5xl">Say Hello</h2>
             <p className="py-8">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
@@ -101,7 +104,10 @@ export function ContactSection({pageName}:{pageName: string}) {
               {!submitState && (
                 <form action="" method="post" onSubmit={handleSubmit}>
                   <div className="mt-12 items-center md:flex">
-                    <div className="flex w-full flex-col md:w-1/2">
+                    <div
+                      className="flex w-full flex-col md:w-1/2"
+                      data-aos="fade-right"
+                    >
                       <label htmlFor="firstname" className="leading-none">
                         First Name
                       </label>
@@ -114,7 +120,10 @@ export function ContactSection({pageName}:{pageName: string}) {
                         className="mt-4 rounded border border-gray-200 bg-gray-100 p-3 leading-none text-gray-900 focus:border-purple-900 focus:outline-none"
                       />
                     </div>
-                    <div className="mt-4 flex w-full flex-col md:ml-6 md:mt-0 md:w-1/2">
+                    <div
+                      className="mt-4 flex w-full flex-col md:ml-6 md:mt-0 md:w-1/2"
+                      data-aos="fade-left"
+                    >
                       <label htmlFor="lastname" className="leading-none">
                         Last Name
                       </label>
@@ -129,7 +138,7 @@ export function ContactSection({pageName}:{pageName: string}) {
                     </div>
                   </div>
                   <div className="mt-8 items-center md:flex">
-                    <div className="flex w-full flex-col">
+                    <div className="flex w-full flex-col" data-aos="fade-up">
                       <label htmlFor="email" className="leading-none">
                         Email
                       </label>
@@ -144,7 +153,10 @@ export function ContactSection({pageName}:{pageName: string}) {
                     </div>
                   </div>
                   <div>
-                    <div className="mt-8 flex w-full flex-col">
+                    <div
+                      className="mt-8 flex w-full flex-col"
+                      data-aos="fade-up"
+                    >
                       <label htmlFor="message" className="leading-none">
                         Message
                       </label>
@@ -158,7 +170,11 @@ export function ContactSection({pageName}:{pageName: string}) {
                     </div>
                   </div>
                   <div className="flex w-full items-center justify-center">
-                    <button className="mt-8 inline-block bg-purple-200 py-3 px-5 text-center text-stone-800">
+                    <button
+                      className="mt-8 inline-block bg-purple-200 py-3 px-5 text-center text-stone-800"
+                      data-aos="fade-in"
+                      data-aos-delay="500"
+                    >
                       Send message
                     </button>
                   </div>

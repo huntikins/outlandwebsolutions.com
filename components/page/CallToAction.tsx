@@ -5,9 +5,14 @@ import graphic from '../../public/assets/home-hero.svg'
 export default function CallToAction() {
     return (
       <section className="bg-purple-200 text-stone-900">
-        <div className="mx-auto flex max-w-7xl flex-col p-4 lg:p-8 lg:flex-row items-center justify-center">
-          <div className="order-last flex-1 lg:py-8 lg:order-first">
-            <h2 className="mb-8 font-brand text-4xl lg:text-5xl">Out of This World Web Solutions</h2>
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-center p-4 lg:flex-row lg:p-8">
+          <div
+            className="order-last flex-1 lg:order-first lg:py-8"
+            data-aos="fade-right"
+          >
+            <h2 className="mb-8 font-brand text-4xl lg:text-5xl">
+              Out of This World Web Solutions
+            </h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
               numquam dolorum inventore consequatur doloremque fuga perferendis
@@ -15,12 +20,16 @@ export default function CallToAction() {
               nesciunt odit! Deleniti, accusamus ipsum.
             </p>
             <Link href="/contact">
-              <a className="mt-8 inline-block bg-stone-900 py-3 px-5 text-center text-purple-200">
+              <a
+                className="mt-8 inline-block bg-stone-900 py-3 px-5 text-center text-purple-200"
+                data-aos="fade-in"
+                data-aos-delay="500"
+              >
                 Let us know how we can help
               </a>
             </Link>
           </div>
-          <div className="flex-1 py-8">
+          <div className="flex-1 py-8" data-aos="fade-up">
             <Image
               src={graphic}
               alt="Graphic of link icon with two persons next to it"

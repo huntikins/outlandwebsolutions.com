@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import 'aos/dist/aos.css'
 import type { AppProps } from 'next/app'
 import Nav from '../components/nav/Nav'
 import Head from 'next/head'
@@ -6,6 +7,7 @@ import Footer from '../components/nav/Footer'
 import Script from 'next/script'
 import { useEffect } from 'react'
 import { useRouter } from 'next/router'
+import AOS from 'aos'
 
 import * as ga from '../utils/ga'
 
@@ -13,6 +15,12 @@ function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
 
   useEffect(() => {
+    AOS.init({
+      disable: 'mobile',
+      duration: 1000,
+      once: true
+    })
+
     const handleRouteChange = (url: string) => {
       ga.pageview(url)
     }
