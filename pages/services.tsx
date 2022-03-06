@@ -21,7 +21,6 @@ const Services: NextPage = () => {
       <section id="development" className="bg-purple-200 py-10 text-stone-900">
         <div
           className="mx-auto flex max-w-7xl flex-col p-4 lg:flex-row lg:p-8"
-          data-aos="fade-right"
         >
           <div className="order-last flex-1 py-8 lg:order-first">
             <h2 className="mb-8 font-brand text-4xl lg:text-5xl">
@@ -81,7 +80,6 @@ const Services: NextPage = () => {
       <section id="hosting" className="bg-stone-900 py-10 text-purple-200">
         <div
           className="mx-auto flex max-w-7xl flex-col p-4 lg:flex-row lg:p-8"
-          data-aos="fade-left"
         >
           <div className="flex-1 py-8">
             <Image
@@ -114,7 +112,6 @@ const Services: NextPage = () => {
       <section id="SEO" className="bg-purple-200 py-10 text-stone-900">
         <div
           className="mx-auto flex max-w-7xl flex-col p-4 lg:flex-row lg:p-8"
-          data-aos="fade-right"
         >
           <div className="order-last flex-1 py-8 lg:order-first">
             <h2 className="mb-8 font-brand text-4xl lg:text-5xl">

@@ -9,7 +9,6 @@ export default function CallToAction() {
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-center p-4 lg:flex-row lg:p-8">
           <div
             className="order-last flex-1 lg:order-first lg:py-8"
-            data-aos="fade-right"
           >
             <h2 className="mb-8 font-brand text-4xl lg:text-5xl">
               Out of This World Web Solutions
@@ -23,14 +22,12 @@ export default function CallToAction() {
             <Link href="/contact">
               <a
                 className="mt-8 inline-block bg-stone-900 py-3 px-5 text-center text-purple-200"
-                data-aos="fade-in"
-                data-aos-delay="500"
               >
                 Let us know how we can help
               </a>
             </Link>
           </div>
-          <div className="flex-1 py-8" data-aos="fade-up">
+          <div className="flex-1 py-8">
             <Image
               src={graphic}
               alt="Graphic of link icon with two persons next to it"

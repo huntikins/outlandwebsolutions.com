@@ -30,8 +30,6 @@ const News: NextPage<Props> = ({ posts }: Props) => {
               <article
                 key={post.slug}
                 className="bg-stone-900 text-purple-200"
-                data-aos="fade-in"
-                data-aos-delay={index * 500}
               >
                 <div className="mb-4">
                   <Thumbnail

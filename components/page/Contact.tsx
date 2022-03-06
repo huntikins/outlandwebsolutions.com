@@ -84,7 +84,6 @@ export function ContactSection({pageName}:{pageName: string}) {
         <div className="mx-auto flex max-w-7xl flex-col lg:flex-row lg:p-8">
           <div
             className="align-center flex flex-1 flex-col justify-center lg:p-8"
-            data-aos="fade-up"
           >
             <h2 className="font-brand text-4xl lg:text-5xl">Say Hello</h2>
             <p className="py-8">
@@ -107,7 +106,6 @@ export function ContactSection({pageName}:{pageName: string}) {
                   <div className="mt-12 items-center md:flex">
                     <div
                       className="flex w-full flex-col md:w-1/2"
-                      data-aos="fade-right"
                     >
                       <label htmlFor="firstname" className="leading-none">
                         First Name
@@ -123,7 +121,6 @@ export function ContactSection({pageName}:{pageName: string}) {
                     </div>
                     <div
                       className="mt-4 flex w-full flex-col md:ml-6 md:mt-0 md:w-1/2"
-                      data-aos="fade-left"
                     >
                       <label htmlFor="lastname" className="leading-none">
                         Last Name
@@ -139,7 +136,7 @@ export function ContactSection({pageName}:{pageName: string}) {
                     </div>
                   </div>
                   <div className="mt-8 items-center md:flex">
-                    <div className="flex w-full flex-col" data-aos="fade-up">
+                    <div className="flex w-full flex-col">
                       <label htmlFor="email" className="leading-none">
                         Email
                       </label>
@@ -156,7 +153,6 @@ export function ContactSection({pageName}:{pageName: string}) {
                   <div>
                     <div
                       className="mt-8 flex w-full flex-col"
-                      data-aos="fade-up"
                     >
                       <label htmlFor="message" className="leading-none">
                         Message
@@ -173,8 +169,6 @@ export function ContactSection({pageName}:{pageName: string}) {
                   <div className="flex w-full items-center justify-center">
                     <button
                       className="mt-8 inline-block bg-purple-200 py-3 px-5 text-center text-stone-800"
-                      data-aos="fade-in"
-                      data-aos-delay="500"
                     >
                       Send message
                     </button>
