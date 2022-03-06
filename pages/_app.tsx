@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import 'aos/dist/aos.css'
+//import 'aos/dist/aos.css'
 import type { AppProps } from 'next/app'
 import Nav from '../components/nav/Nav'
 import Head from 'next/head'
@@ -18,7 +18,8 @@ function MyApp({ Component, pageProps }: AppProps) {
     AOS.init({
       disable: 'mobile',
       duration: 1000,
-      once: true
+      once: true,
+      startEvent: 'load',
     })
 
     const handleRouteChange = (url: string) => {
