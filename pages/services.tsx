@@ -33,23 +33,27 @@ const Services: NextPage = () => {
               easily integrate personalized branding and the atmosphere you
               need.
             </p>
-            <ul className="pl-4">
+            <ul className="list-decimal pl-4">
               <li className="mb-2">
-                <span className="font-extrabold underline">Step 1:</span> Attend your Discovery
-                Session We’ll meet with you to discuss your needs, wants, and
-                the online environment you’d like to create.
+                <h3 className="text-md font-brand">
+                  Attend your Discovery Session
+                </h3>
+                We’ll meet with you to discuss your needs, wants, and the online
+                environment you’d like to create.
               </li>
               <li className="mb-2">
-                <span className="font-extrabold underline">Step 2:</span> Choose your support
-                tier We offer multiple tiers to get you exactly what you need at
-                a price that works for your budget.{' '}
-                <Link href="/contact">
+                <h3 className="text-md font-brand">
+                  Choose your support tier
+                </h3>
+                We offer multiple tiers to get you exactly what you need at a
+                price that works for your budget.{' '}
+                <Link href="/contact?custom-web-development">
                   <a className="font-extrabold underline">Contact us</a>
                 </Link>{' '}
                 for a breakdown of these details.
               </li>
               <li className="mb-2">
-                <span className="font-extrabold underline">Step 3:</span> Develop your design
+                <h3 className="text-md font-brand">Develop your design</h3>
                 We’ll work with you to make sure every detail matches your
                 unique vision.
               </li>
@@ -58,7 +62,7 @@ const Services: NextPage = () => {
               Our webpages are designed to be user-friendly, so you can choose
               to make your own edits, or leave it to us…
             </p>
-            <Link href="/contact">
+            <Link href="/contact?custom-web-development">
               <a className="mt-8 inline-block bg-stone-900 py-3 px-5 text-center text-purple-200">
                 Tell us your website needs
               </a>
@@ -99,7 +103,7 @@ const Services: NextPage = () => {
               it’s adding new features, or updating existing content - we’ve got
               you.
             </p>
-            <Link href="/contact">
+            <Link href="/contact?hosting-and-maintenance">
               <a className="mt-8 inline-block bg-purple-200 py-3 px-5 text-center text-stone-900">
                 Let us know how we can help
               </a>
@@ -122,7 +126,7 @@ const Services: NextPage = () => {
               from the moment it’s live, and can be readily updated with ongoing
               maintenance.
             </p>
-            <Link href="/contact">
+            <Link href="/contact?seo">
               <a className="mt-8 inline-block bg-stone-900 py-3 px-5 text-center text-purple-200">
                 Time to get you ranked
               </a>
