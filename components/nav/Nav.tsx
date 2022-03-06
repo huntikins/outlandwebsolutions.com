@@ -28,7 +28,7 @@ export default function Nav() {
                 router.pathname == '/' ? 'text-white' : 'text-purple-200'
               } font-brand text-lg uppercase tracking-tight text-purple-200 lg:text-xl`}
             >
-              Outland
+              Outland Web Solutions
             </a>
           </Link>
         </div>

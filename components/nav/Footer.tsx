@@ -10,7 +10,7 @@ export default function Footer() {
             <div className="mr-6 flex flex-shrink-0 items-center text-white">
               <Link href="/">
                 <a className="font-brand text-lg uppercase tracking-tight text-purple-200 lg:text-xl">
-                  Outland
+                  Outland Web Solutions
                 </a>
               </Link>
             </div>
