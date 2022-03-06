@@ -27,7 +27,7 @@ function NewsSection() {
               data-aos="fade-in"
               data-aos-delay="500"
             >
-              Check Out The Latest News
+              Check out the latest news
             </a>
           </Link>
         </div>

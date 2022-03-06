@@ -26,11 +26,11 @@ export default function ServicesSection() {
               data-aos="fade-in"
               data-aos-delay="500"
             >
-              Check Out The Latest News
+              Our services at your disposal
             </a>
           </Link>
         </div>
-        <div className="flex-1 py-8" data-aos="fade-right">
+        <div className="flex-1 py-8 hidden lg:flex" data-aos="fade-right">
           <Image
             src={graphic}
             alt="Graphic of link icon with two persons next to it"
