@@ -3,8 +3,6 @@ import Image from 'next/image'
 import { useRef, useState } from 'react'
 
 export function ContactSection({pageName}:{pageName: string}) {
-  const portalId = '20809680'
-  const formId = '764a9dda-8540-4819-9256-687ed30d62a5'
 
   function getCookie(cname: string) {
     var name = cname + '='
@@ -33,7 +31,7 @@ export function ContactSection({pageName}:{pageName: string}) {
     e.preventDefault()
     try {
       const response = await fetch(
-        `https://api.hsforms.com/submissions/v3/integration/submit/${portalId}/${formId}`,
+        `/api/hubspot`,
         {
           method: 'POST',
           headers: {
@@ -72,6 +70,10 @@ export function ContactSection({pageName}:{pageName: string}) {
 
       setSubmitState(true)
 
+      const data = await response.json()
+
+      console.log(data)
+
     } catch (error) {
       console.error(error)
     }
@@ -86,10 +88,9 @@ export function ContactSection({pageName}:{pageName: string}) {
           >
             <h2 className="font-brand text-4xl lg:text-5xl">Say Hello</h2>
             <p className="py-8">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              numquam dolorum inventore consequatur doloremque fuga perferendis
-              molestiae atque quaerat vero, tenetur amet cum natus accusantium
-              nesciunt odit! Deleniti, accusamus ipsum.
+              Ready to venture out to your new site? Leave your contact and a
+              short message and we’ll let you know how we can get started on
+              your custom webpage!
             </p>
             <Image
               src={graphic}

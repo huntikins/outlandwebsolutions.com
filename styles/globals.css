@@ -7,4 +7,15 @@
     font-family: 'Coda', cursive;
     scroll-behavior: smooth;
   }
+  .ows_article p {
+    margin-bottom: 1.5rem;
+  }
+  .ows_article ol, .ows_article ul {
+    list-style: bullet;
+    margin-left: 1.5rem;
+    padding-left: 1rem;
+  }
+  .ows_article li {
+    padding-bottom: 1rem;
+  }
 }

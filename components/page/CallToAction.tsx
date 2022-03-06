@@ -3,8 +3,18 @@ import Image from "next/image";
 import graphic from '../../public/assets/home-hero.svg'
 
 export default function CallToAction() {
+    
     return (
       <section className="bg-purple-200 text-stone-900">
+        <div className="pt-4">
+          <h1
+            className="rounded-lg p-4 text-center font-brand text-6xl uppercase lg:p-8 lg:text-9xl"
+            data-aos="fade-down"
+          >
+            Outland
+            <span className="block text-3xl lg:text-5xl">Web Solutions</span>
+          </h1>
+        </div>
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-center p-4 lg:flex-row lg:p-8">
           <div
             className="order-last flex-1 lg:order-first lg:py-8"

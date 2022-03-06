@@ -19,10 +19,7 @@ function NewsSection() {
             Get Connected
           </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-            numquam dolorum inventore consequatur doloremque fuga perferendis
-            molestiae atque quaerat vero, tenetur amet cum natus accusantium
-            nesciunt odit! Deleniti, accusamus ipsum.
+            See what we’re up to and check out the latest in web development!
           </p>
           <Link href="/news">
             <a

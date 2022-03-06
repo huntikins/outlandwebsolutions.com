@@ -14,10 +14,11 @@ export default function ServicesSection() {
           Full Service Web Development
         </h2>
         <p className="w-full text-center lg:mx-auto lg:w-1/2">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet
-          doloribus optio necessitatibus repellendus molestiae fuga rem ab
-          inventore, excepturi officia facilis perspiciatis suscipit hic
-          reprehenderit facere modi eligendi dolore cum!
+          At Outland Web Solutions, we can build your 100% unique and
+          customizable website. Let us host and maintain your site (whether we
+          built it or not) and keep you on everyone’s radar with search engine
+          optimization. Check out our services and let us know when you’re ready
+          to say “go for launch” on your new site.
         </p>
       </div>
       <div className="flex flex-col flex-wrap lg:flex-row">

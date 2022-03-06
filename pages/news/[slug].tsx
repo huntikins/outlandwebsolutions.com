@@ -6,6 +6,8 @@ import Thumbnail from '../../components/news/Thumbnail'
 import { IPost } from '../../types/post'
 import { getPost, getAllPosts } from '../../utils/mdxUtils'
 import { ParsedUrlQuery } from 'querystring'
+import Head from 'next/head'
+import { useRouter } from 'next/router'
 
 // props type
 type Props = {
@@ -15,20 +17,58 @@ type Props = {
 
 const PostPage: React.FC<Props> = ({ source, frontMatter }: Props) => {
 
+  const router = useRouter()
+
+  const seo = {
+    title: frontMatter.title,
+    description: frontMatter.description,
+    thumbnail: `https://outlandwebsolutions.com${frontMatter.thumbnail}`,
+    base_url: 'https://outlandwebsolutions.com',
+    twitter: '@weboutland',
+  }
+
+  console.log(seo.thumbnail)
+
   return (
-    <main className='bg-purple-200'>
-      <article className='p-8'>
-        <h1 className="animate-fadeIn p-8 text-center font-brand text-3xl uppercase text-stone-900 lg:text-6xl">
-          {frontMatter.title}
-        </h1>
-        <div className="mx-auto w-2/3 py-8">
-          <Thumbnail title={frontMatter.title} src={frontMatter.thumbnail} />
-        </div>
-        <div className="p-8 max-w-7xl mx-auto text-2xl">
-          <MDXRemote {...source} />
-        </div>
-      </article>
-    </main>
+    <>
+      <Head>
+        <title>{seo.title}</title>
+        <meta name="description" content={seo.description} />
+        <meta property="og:image" content={seo.thumbnail} />
+        <meta property="og:site_name" content={seo.title} />
+        <meta property="og:title" content={seo.title} />
+        <meta property="og:description" content={seo.description} />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:url"
+          content={`https://outlandwebsolutions.com${router.pathname}`}
+        />
+        <meta property="og:locale" content="en_US" />
+        <meta name="twitter:card" content="summary" />
+        <meta name="twitter:site" content={seo.twitter} />
+        <meta name="twitter:creator" content="@trammellwebdev" />
+        <meta
+          name="twitter:url"
+          content={`https://outlandwebsolutions.com${router.pathname}`}
+        />
+        <meta name="twitter:title" content={seo.title} />
+        <meta name="twitter:description" content={seo.description} />
+        <meta name="twitter:image" content={seo.thumbnail} />
+      </Head>
+      <main>
+        <article className="mx-auto max-w-5xl">
+          <div className="mx-auto w-full lg:w-2/3 lg:py-8">
+            <Thumbnail title={frontMatter.title} src={frontMatter.thumbnail} />
+          </div>
+          <h1 className="animate-fadeIn p-4 text-center font-brand text-xl uppercase text-stone-900 lg:text-2xl">
+            {frontMatter.title}
+          </h1>
+          <div className="ows_article mx-auto max-w-7xl p-4">
+            <MDXRemote {...source} />
+          </div>
+        </article>
+      </main>
+    </>
   )
 }
 
