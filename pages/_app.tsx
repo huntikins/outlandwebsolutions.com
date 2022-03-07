@@ -55,6 +55,11 @@ function MyApp({ Component, pageProps }: AppProps) {
         src="https://www.googletagmanager.com/gtag/js?id=UA-221009183-1"
       />
       {/*<!-- End Google Tag Manager -->*/}
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6990879659890248"
+        crossOrigin="anonymous"
+      />
       <Head>
         <title>{seo.title}</title>
         <meta name="description" content={seo.description} />
@@ -76,10 +81,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           content={`https://outlandwebsolutions.com${router.pathname}`}
         />
         <meta name="twitter:title" content={seo.title} />
-        <meta
-          name="twitter:description"
-          content={seo.description}
-        />
+        <meta name="twitter:description" content={seo.description} />
         <meta name="twitter:image" content={seo.thumbnail} />
       </Head>
       <Nav />

@@ -35,49 +35,51 @@ export default function ServicesSection() {
           />
         </div>
       </div>
-      <div className="flex flex-col flex-wrap py-8 lg:flex-row">
-        <article className="flex w-full flex-col justify-between lg:w-1/3 lg:p-8">
-          <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
-            <Image
-              src={developer}
-              alt="Graphic of developer working behind a monitor"
-              height="111"
-              width="127"
-            />
+      <div className="flex flex-col flex-wrap py-8 text-stone-900 lg:flex-row">
+        <article className="w-full lg:w-1/3 lg:p-8">
+          <div className="my-4 rounded bg-purple-200 p-4">
+            <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
+              <Image
+                src={developer}
+                alt="Graphic of developer working behind a monitor"
+                height="111"
+                width="127"
+              />
+            </div>
+            <h3 className="p-8 text-center font-brand text-3xl">
+              Custom Web Development
+            </h3>
           </div>
-          <h3 className="p-8 text-center font-brand text-3xl">
-            Custom Web Development
-          </h3>
         </article>
-        <article
-          className="flex w-full flex-col justify-between lg:w-1/3 lg:p-8"
-        >
-          <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
-            <Image
-              src={hosting}
-              alt="Graphic of developer working behind a monitor"
-              height="111"
-              width="127"
-            />
+        <article className="w-full lg:w-1/3 lg:p-8">
+          <div className="my-4 rounded bg-purple-200 p-4">
+            <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
+              <Image
+                src={hosting}
+                alt="Graphic of developer working behind a monitor"
+                height="111"
+                width="127"
+              />
+            </div>
+            <h3 className="p-8 text-center font-brand text-3xl">
+              Web Hosting & Maintenance
+            </h3>
           </div>
-          <h3 className="p-8 text-center font-brand text-3xl">
-            Web Hosting & Maintenance
-          </h3>
         </article>
-        <article
-          className="flex w-full flex-col justify-between lg:w-1/3 lg:p-8"
-        >
-          <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
-            <Image
-              src={seo}
-              alt="Graphic of developer working behind a monitor"
-              height="111"
-              width="127"
-            />
+        <article className="w-full lg:w-1/3 lg:p-8">
+          <div className="my-4 rounded bg-purple-200 p-4">
+            <div className="align-center mx-auto flex h-full w-full justify-center lg:w-1/2">
+              <Image
+                src={seo}
+                alt="Graphic of developer working behind a monitor"
+                height="111"
+                width="127"
+              />
+            </div>
+            <h3 className="p-8 text-center font-brand text-3xl">
+              Search Engine Optimization
+            </h3>
           </div>
-          <h3 className="p-8 text-center font-brand text-3xl">
-            Search Engine Optimization
-          </h3>
         </article>
       </div>
     </section>
