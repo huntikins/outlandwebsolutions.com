@@ -15,7 +15,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="w-full flex-grow pt-8 text-purple-200 lg:flex lg:w-auto lg:items-center">
-              <ul className="text-md m-0 lg:flex list-none p-0 font-brand uppercase ">
+              <ul className="text-md m-0 list-none p-0 font-brand uppercase lg:flex ">
                 <li>
                   <Link href="/news">
                     <a className="mt-4 mr-4 block hover:text-white lg:mt-0 lg:inline-block">
@@ -37,11 +37,18 @@ export default function Footer() {
                     </a>
                   </Link>
                 </li>
+                <li>
+                  <Link href="/privacy-policy">
+                    <a className="mt-4 mr-4 block hover:text-white lg:mt-0 lg:inline-block">
+                      Privacy Policy
+                    </a>
+                  </Link>
+                </li>
               </ul>
             </div>
           </nav>
-          <div className=" px-4 lg:px-6 py-8 text-purple-200 lg:flex lg:w-auto lg:items-center">
-            <ul className="text-md m-0 block lg:flex list-none p-0 font-brand uppercase">
+          <div className=" px-4 py-8 text-purple-200 lg:flex lg:w-auto lg:items-center lg:px-6">
+            <ul className="text-md m-0 block list-none p-0 font-brand uppercase lg:flex">
               <li>
                 <Link href="https://twitter.com/weboutland">
                   <a className="mt-4 mr-4 block hover:text-white lg:mt-0 lg:inline-block">
@@ -74,8 +81,10 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-            </div>
-            <p className="text-center text-stone-900 bg-purple-200 py-2">&copy; { date } Outland Web Solutions</p>
+        </div>
+        <p className="bg-purple-200 py-2 text-center text-stone-900">
+          &copy; {date} Outland Web Solutions
+        </p>
       </footer>
     )
 }

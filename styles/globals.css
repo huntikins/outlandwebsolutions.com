@@ -18,4 +18,9 @@
   .ows_article li {
     padding-bottom: 1rem;
   }
+
+  .ows_article a {
+    text-decoration: underline;
+    color: #7C2AE8;
+  }
 }
