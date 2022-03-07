@@ -15,7 +15,7 @@ export default function Footer() {
               </Link>
             </div>
             <div className="w-full flex-grow pt-8 text-purple-200 lg:flex lg:w-auto lg:items-center">
-              <ul className="text-md m-0 flex list-none p-0 font-brand uppercase ">
+              <ul className="text-md m-0 lg:flex list-none p-0 font-brand uppercase ">
                 <li>
                   <Link href="/news">
                     <a className="mt-4 mr-4 block hover:text-white lg:mt-0 lg:inline-block">
