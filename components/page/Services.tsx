@@ -47,7 +47,7 @@ export default function ServicesSection() {
               />
             </div>
             <h3 className="p-8 text-center font-brand text-3xl">
-              Custom Web Development
+              Custom Web<br/>Development
             </h3>
           </div>
         </article>

@@ -14,10 +14,7 @@ export default function CallToAction() {
               Out of This World Web Solutions
             </h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
-              numquam dolorum inventore consequatur doloremque fuga perferendis
-              molestiae atque quaerat vero, tenetur amet cum natus accusantium
-              nesciunt odit! Deleniti, accusamus ipsum.
+              Welcome to the Outlands! If you are looking for a new site or need some help with an existing one we are here to help every step of the way.
             </p>
             <Link href="/contact">
               <a
