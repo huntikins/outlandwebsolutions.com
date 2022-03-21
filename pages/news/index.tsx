@@ -15,7 +15,7 @@ type Props = {
 // component render function
 const News: NextPage<Props> = ({ posts }: Props) => {
     return (
-      <main>
+      <main className="bg-purple-200">
         <Hero label="Outland Web Solutions" bkg={bkg}>
           <div className="bg-stone-900 bg-opacity-80">
             <h1 className="animate-fadeIn rounded-lg p-8 text-center font-brand text-6xl uppercase text-purple-200 lg:text-9xl">
@@ -23,44 +23,45 @@ const News: NextPage<Props> = ({ posts }: Props) => {
             </h1>
           </div>
         </Hero>
+        <section className="mx-auto max-w-7xl p-4">
+          <div className="grid grid-cols-1 gap-4 p-4 lg:grid-cols-3">
+            {posts.length ? (
+              posts.map((post, index) => (
+                <article
+                  key={post.slug}
+                  className="bg-stone-900 text-purple-200"
+                >
+                  <div className="mb-4">
+                    <Thumbnail
+                      slug={post.slug}
+                      title={post.title}
+                      src={post.thumbnail}
+                    />
+                  </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 bg-purple-200 p-4">
-          {posts.length ? (
-            posts.map((post, index) => (
-              <article
-                key={post.slug}
-                className="bg-stone-900 text-purple-200"
-              >
-                <div className="mb-4">
-                  <Thumbnail
-                    slug={post.slug}
-                    title={post.title}
-                    src={post.thumbnail}
-                  />
-                </div>
+                  <div className="px-8 pb-8">
+                    <h2 className="mb-4 text-2xl font-bold">
+                      <Link href={`/news/${post.slug}`}>
+                        <a>{post.title}</a>
+                      </Link>
+                    </h2>
 
-                <div className="px-8 pb-8">
-                  <h2 className="mb-4 text-2xl font-bold">
-                    <Link href={`/news/${post.slug}`}>
-                      <a>{post.title}</a>
-                    </Link>
-                  </h2>
-
-                  <p>
-                    {post.description}{' '}
-                    <Link href={`/news/${post.slug}`}>
-                      <a className="underline">Read More &gt;&gt;</a>
-                    </Link>
-                  </p>
-                </div>
-              </article>
-            ))
-          ) : (
-            <div className="w-full p-8 text-center">
-              <p>New Posts Coming Soon</p>
-            </div>
-          )}
-        </div>
+                    <p>
+                      {post.description}{' '}
+                      <Link href={`/news/${post.slug}`}>
+                        <a className="underline">Read More &gt;&gt;</a>
+                      </Link>
+                    </p>
+                  </div>
+                </article>
+              ))
+            ) : (
+              <div className="w-full p-8 text-center">
+                <p>New Posts Coming Soon</p>
+              </div>
+            )}
+          </div>
+        </section>
       </main>
     )
 }
